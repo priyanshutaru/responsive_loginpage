@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_loginform/widget/button.dart';
 import 'package:responsive_loginform/widget/home.dart';
+import 'package:responsive_loginform/widget/register.dart';
 
 class MyMainHome extends StatefulWidget {
   const MyMainHome({super.key});
@@ -25,13 +26,12 @@ class _MyMainHomeState extends State<MyMainHome> {
           children: [
             GradientButton(
               butonname: "Register",
-              
+              page: MyRegisterPage(),
             ),
             SizedBox(height: 25),
             GradientButton(
               butonname: "Login",
-              // rasta: Navigator.push(context,
-              //     MaterialPageRoute(builder: (context) => MyHomePage())),
+              page: MyHomePage(),
             ),
           ],
         ),

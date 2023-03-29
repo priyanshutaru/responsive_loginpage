@@ -6,9 +6,10 @@ import 'package:responsive_loginform/widget/pallet.dart';
 
 class GradientButton extends StatelessWidget {
   final butonname;
+  final page;
   
 
-  GradientButton({super.key, required this.butonname,});
+  GradientButton({super.key, required this.butonname, required this.page});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,10 @@ class GradientButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(7),
       ),
       child: ElevatedButton(
-        onPressed: null,
+        onPressed: (){
+          Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => page));
+        },
         style: ElevatedButton.styleFrom(
           fixedSize: const Size(313, 55),
           backgroundColor: Colors.transparent,
