@@ -1,9 +1,14 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import 'package:responsive_loginform/widget/pallet.dart';
 
 class GradientButton extends StatelessWidget {
-  const GradientButton({Key? key}) : super(key: key);
+  final butonname;
+  
+
+  GradientButton({super.key, required this.butonname,});
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +26,14 @@ class GradientButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(7),
       ),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: null,
         style: ElevatedButton.styleFrom(
           fixedSize: const Size(313, 55),
           backgroundColor: Colors.transparent,
           shadowColor: Colors.transparent,
         ),
-        child: const Text(
-          'Sign in',
+        child: Text(
+          butonname,
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 17,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_loginform/widget/home.dart';
+import 'package:responsive_loginform/widget/mainhome.dart';
 import 'package:responsive_loginform/widget/pallet.dart';
 
 void main() {
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Pallete.backgroundColor,
       ),
-      home: const MyHomePage(),
+      // home: const MyHomePage(),
+      home: MyMainHome(),
     );
   }
 }

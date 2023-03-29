@@ -65,7 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 15,
               ),
-              const GradientButton(),
+              GradientButton(
+                butonname: "Login",
+              ),
             ],
           ),
         ),
